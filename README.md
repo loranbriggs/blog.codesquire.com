@@ -1,3 +1,3 @@
 # Blog for CodeSquire.com
 
-visit <blog.codesquire.com>
+visit my [blog](blog.codesquire.com)
