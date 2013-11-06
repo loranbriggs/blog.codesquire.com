@@ -1,7 +1,7 @@
 {{{
   "title": "Generate Images Programtically Windows8 C++",
   "tags": ["C++", "Windows8"],
-  "category": "Tutorial",
+  "category": "Code Sample",
   "date": "11-2-2013"
 }}}
 

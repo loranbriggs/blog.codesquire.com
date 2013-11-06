@@ -1,7 +1,7 @@
 {{{
   "title": "Privacy Statement Windows 8 Javascript App",
-  "tags": ["C++", "Windows 8", "Javascript"],
-  "category": "Windows 8",
+  "tags": ["C++", "Windows8", "Javascript"],
+  "category": "Tutorial",
   "date": "11-3-2013"
 }}}
 

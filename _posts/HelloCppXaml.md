@@ -1,7 +1,7 @@
 {{{
   "title": "Build Your First Windows 8 C++ App",
-  "tags": ["C++", "Windows 8", "Xaml"],
-  "category": "Tutorials",
+  "tags": ["C++", "Windows8", "Xaml"],
+  "category": "Tutorial",
   "date": "10-30-2013"
 }}}
 
