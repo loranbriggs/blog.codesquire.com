@@ -1,7 +1,7 @@
 {{{
-  "title": "Insert images programatically with C++",
-  "tags": ["C++", "Windows 8"],
-  "category": "Windows 8",
+  "title": "Generate Images Programtically Windows8 C++",
+  "tags": ["C++", "Windows8"],
+  "category": "Tutorial",
   "date": "11-2-2013"
 }}}
 

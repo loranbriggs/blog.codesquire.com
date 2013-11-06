@@ -1,7 +1,7 @@
 {{{
-  "title": "Hello C++ / Xaml",
+  "title": "Build Your First Windows 8 C++ App",
   "tags": ["C++", "Windows 8", "Xaml"],
-  "category": "Windows 8",
+  "category": "Tutorials",
   "date": "10-30-2013"
 }}}
 
@@ -11,8 +11,6 @@ to get you crawling.<!--more--> You have to walk before you run, crawl before
 you walk. Most tutorials either assume to much or too little, so
 I will try to strike a happy medium. You have Visual Studios install
 right? I'l wait here while you go get that.
-
-Okay we're back! Start off by making a new project.
 
 ![New Project](/post_imgs/HelloC++/newProject.png)
 

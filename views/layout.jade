@@ -1,17 +1,30 @@
-!!!
-html
+doctype 5
+html(lang="en")
   head
     title= 'CodeSquire | Blog'
     meta(charset='utf-8')
+    link(rel='shortcut icon' type='image/ico' href='/images/favicon2.ico')
     link(href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", rel="stylesheet")
+    link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", rel="stylesheet")
     link(href="/stylesheets/style.css", rel="stylesheet")
   body
-    .nav
-      a(href='http://codesquire.com') <span class="glyphicon glyphicon-circle-arrow-left"></span> Codesquire.com
-      |
-      a(href='/') Blog Home
-    //-.row
-      .col-sm-3
+    header
+      h1.text-center
+        a(href='http://codesquire.com')
+          i.fa.fa-reply  Codesquire.com
+      nav
+        ul.nav.nav-pills
+          li
+            a(href='/')
+              i.fa.fa-file-o  Articles
+          li
+            a(href='/')
+              i.fa.fa-code  Code
+          li
+            a(href='http://codesquire.com/products')
+              i.fa.fa-rocket  Projects
+    .row
+      .col-sm-2
         .well.sidebar-nav
           ul.nav.nav-list
             li.nav-header categories
@@ -22,7 +35,12 @@ html
             - each tag in getTags()
               li
                 a(href=tagURL(tag)) #{tag}
-      .col-sm-8.col-sm-offset-3
-    block content
+      .col-sm-8
+        block content
+
+      .col-sm-2
+        .ad
+          include includes/advertising
+
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
     script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
