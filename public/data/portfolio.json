@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "p1",
+      "img": "images/",
+      "link": "http://"
+    },
+    {
+      "name": "p2",
+      "img": "images/",
+      "link": "http://"
+    },
+    {
+      "name": "p3",
+      "img": "images/",
+      "link": "http://"
+    }
+  ]
+}

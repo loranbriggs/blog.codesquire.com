@@ -1,0 +1,20 @@
+      <div class="col-sm-2 advertising">
+        <% include advertising.ejs %>
+      </div>
+    </div><!-- end row -->
+    </div><!-- end row -->
+    <div class="cat well">
+      <ul class="nav nav-list">
+        <li class="nav-header">categories</li>
+        <% getCategories().forEach(function(cat) { %>
+          <li><a href="<% categoryURL(cat) %>"><%= cat %></a></li>
+        <% }) %>
+
+        <li class="nav-header">tags</li>
+        <% getTags().forEach(function(tag) { %>
+          <li><a href="<% tagURL(tag) %>"><%= tag %></a></li>
+        <% }) %>
+      </ul>
+    </div>
+  </body>
+ </html>

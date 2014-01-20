@@ -1,6 +1,6 @@
 html {
-    height: 100%;
-    background: #ffffff url(../images/bg_texture.png);
+  height: 100%;
+  background: #fefbf0 url(../images/bg_texture.png);
 }
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -11,62 +11,121 @@ a {
   color: #00B7FF;
 }
 
-header {
-    background: #028ed1;
-    text-align:center;
+a:hover {
+  text-decoration: none;
 }
 
+.myorange {
+  color: #ff8900;
+}
+
+header {
+  background: #4D642D;
+  width: 400px;
+}
+
+header, header h1 {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  color: #ffffff;
+  font-size:36px;
+}
+
+
 header h1 {
-    margin: 0;
-    padding: 20px 0;
+  padding: 20px 0;
+  margin: 0;
 }
 
 header h1 a:hover {
-    color: #dddddd;
+  color: #dddddd;
 }
 
-nav {
-    display: inline-block;
-    padding: 20px 0;
-    font-size: 2em;
+@-webkit-keyframes blink { 
+  0% { opacity: 0 }
+  50% { opacity: 0 }
+  50.01% { opacity: 1 }
+  100% { opacity: 1 }
+}
+
+.blink {
+  -webkit-animation: blink 0.7s infinite linear alternate;
+  -webkit-font-smoothing: antialiased;
+}
+
+#main-nav {
+  text-align:center;
+  padding: 50px 0 0 90px;
+  font-size: 5em;
+}
+
+#main-nav img {
+  border-radius: 10px;
+}
+
+#main-nav img, #main-nav i {
+  margin-bottom: 20px;
+}
+
+#main-nav i {
+  display: block;
 }
 
 header a {
-    color: #e7e7e7;
-    border-radius: 3px;
+  color: #e7e7e7;
+  border-radius: 3px;
 }
 
 .post img {
-    width: 90%;
-    margin: 20px 0;
+  width: 90%;
+  margin: 20px 0;
 }
 
 .post-0 {
-    background: #118798;
+  background: #118798;
 }
 .post-1 {
-    background: #2143A8;
+  background: #2143A8;
 }
 .post-2 {
-    background: #F8B118;
+  background: #F8B118;
 }
 .post-3 {
-    background: #F88318;
+  background: #F88318;
+}
+
+.fa-file-o {
+  color: green;
+}
+
+.fa-code {
+  color: red;
+}
+
+.fa-rocket {
+  color: purple;
 }
 
 @media only screen and (max-width: 640px) {
 
-    nav {
-        font-size: 1.5em;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 10000;
-        border: 0;
-        margin: 0;
-        padding: 10px 0 0;
-        background: rgba(0,0,0,0.8);
+    nav#header-nav {
+      font-size: 1.5em;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 55px;
+      z-index: 10000;
+      border: 0;
+      margin: 0;
+      padding: 10px 0 0;
+      background: rgba(0,0,0,0.8);
+    }
+
+    #sidebar-nav {
+      position: fixed;
+      bottom: 55px;
+      left: 0;
+      right: 0;
     }
 }

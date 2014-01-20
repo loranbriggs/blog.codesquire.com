@@ -1,0 +1,14 @@
+<% include includes/header.ejs %>
+
+<% var posts = getPosts(0,5) %>
+<% var page = 1 %>
+
+  <div class="posts col-sm-10">
+    <% posts.forEach(function(post){ %>
+      <% include includes/postSnippet.ejs %>
+    <% }) %>
+  </div>
+
+<!--<% include includes/pagination.ejs %>-->
+
+<% include includes/footer.ejs %>
