@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #4D642D;
 }
 
 a:hover {
@@ -91,6 +91,16 @@ header a {
 }
 .post-3 {
   background: #F88318;
+}
+
+.project {
+  height: 400px;
+  border-style: solid;
+  border-color: #ccc;
+  padding:1%;
+  margin: 1%;
+  border-radius: 5px;
+  min-height: 280px;
 }
 
 .fa-file-o {

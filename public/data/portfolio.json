@@ -1,19 +1,109 @@
 {
   "projects": [
     {
-      "name": "p1",
-      "img": "images/",
-      "link": "http://"
+      "title": "Reveal App",
+      "img": "images/portfolio/reveal-app.png",
+      "url": "https://build.phonegap.com/apps/537642/share",
+      "description": "A promotional app for General Electric's Reveal product line. Simulates how your home or office will look like with the Reveal Bulbs.",
+      "tags": ["Anuglar JS", "Phonegap", "iOS", "Android", "API"]
     },
     {
-      "name": "p2",
-      "img": "images/",
-      "link": "http://"
+      "title": "Prostpect Mortgage Review",
+      "img": "images/portfolio/prospect_logo.png",
+      "url": "http://prospectmortgagereview.com/",
+      "description": "Allows customer's to review Postpect Mortgage's lending services and for Prpspect Mortgage to track and highlight specific reviews.",
+      "tags": ["Laravel", "MySQL", "CRUD", "Admin Backend"]
     },
     {
-      "name": "p3",
-      "img": "images/",
-      "link": "http://"
+      "title": "Mirage Dynamic Landing Page",
+      "img": "images/portfolio/MirageLogo.gif",
+      "url": "http://mirage-dlp-genx.s3-website-us-east-1.amazonaws.com/#home/index",
+      "description": "A dymamic landing page to highlight the current attractions at the Mirage Casino and Resort",
+      "tags": ["Backbone JS"]
+    },
+    {
+      "title": "HTML email Development",
+      "img": "images/portfolio/email.png",
+      "url": "http://box.codesquire.com/emails",
+      "description": "Cross platform mobile friendly email campaigns.",
+      "tags": ["Email", "Litmust Testing", "Mozify"]
+    },
+    {
+      "title": "AICCU",
+      "img": "images/portfolio/aiccu.png",
+      "url": "http://www.aiccu.edu/",
+      "description": "Using Wordpress as a CMS, AICCU is able to quickly and easily update their site. ",
+      "tags": ["Wordpress"]
+    },
+    {
+      "title": "CG Tech",
+      "img": "images/portfolio/cgtech.png",
+      "url": "http://www.cgtech.com/",
+      "description": "This once complicated network of international sites has been greatly simplified using WPML - WordPress Multilingual Plugin.",
+      "tags": ["Wordpress", "Multilingual"]
+    },
+    {
+      "title": "Rogue Assassin",
+      "img": "images/portfolio/rogueassassin.png",
+      "url": "http://apps.microsoft.com/windows/app/rogue-assassin/a116ea25-6e9a-473a-a0fe-510d294e9ae0",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "State Capitals Quiz",
+      "img": "images/portfolio/capitals.png",
+      "url": "http://apps.microsoft.com/windows/app/state-quiz/fc17e4bf-7bcd-458f-9d42-23e6f4167c9d",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "Pythagorean Theorem",
+      "img": "images/portfolio/pythagorean.png",
+      "url": "http://apps.microsoft.com/windows/app/pythagoreantheorem/2d55f7da-64e0-42cb-aaa8-b4e82523a722",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "Yoda Speak",
+      "img": "images/portfolio/yoda.png",
+      "url": "http://apps.microsoft.com/windows/app/yoda-speak/ff0fae6e-cee0-424c-940d-b8ffd350626d",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "Tip Calculator",
+      "img": "images/portfolio/tipcalc.png",
+      "url": "http://apps.microsoft.com/windows/app/tip-calculator-simple/d5b9c3a9-72a2-42a4-8d4f-3af5154953b4",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "Loan Calculator",
+      "img": "images/portfolio/loan.png",
+      "url": "http://apps.microsoft.com/windows/app/loan-calculator-simple/f66db96c-6f1c-4d1a-9534-ed1350b5f4b6",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "Coin Flipper",
+      "img": "images/portfolio/coinflipper.png",
+      "url": "http://apps.microsoft.com/windows/app/coinflipper/412e2ba8-1b7a-4ef2-a911-97162c267b25",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "An Apple a Day",
+      "img": "images/portfolio/apple.png",
+      "url": "http://apps.microsoft.com/windows/app/an-apple-a-day/e461d431-623d-4ab2-8d51-1e54748518d7",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
+    },
+    {
+      "title": "Rock Paperweight Scissors",
+      "img": "images/portfolio/rock.png",
+      "url": "http://apps.microsoft.com/windows/app/rock-paperweight-scissors/00c01fb7-44f7-4f92-977c-bd644e65100b",
+      "description": "Windows 8 Application, download from the Windows App Store",
+      "tags": ["Windows 8"]
     }
   ]
 }
