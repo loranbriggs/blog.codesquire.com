@@ -3,7 +3,7 @@
 <% var posts = getPosts(0,5) %>
 <% var page = 1 %>
 
-  <div class="posts col-sm-10">
+  <div class="posts">
     <% posts.forEach(function(post){ %>
       <% include includes/postSnippet.ejs %>
     <% }) %>

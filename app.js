@@ -25,7 +25,7 @@ poet.watch(function() {
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3001);
-  app.set('views', __dirname + '/views/ejs');
+  app.set('views', __dirname + '/views/');
   app.set('view engine', 'ejs');
   app.use(express.favicon());
   app.use(express.logger('dev'));
@@ -40,7 +40,10 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/work', routes.portfolio);
 app.get('/portfolio', routes.portfolio);
+app.get('/about', routes.about);
+app.get('/contact', routes.contact);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

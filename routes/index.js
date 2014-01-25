@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Home' });
 };
 
 exports.portfolio = function(req, res) {
@@ -21,7 +21,15 @@ exports.portfolio = function(req, res) {
     console.log("data:");
     console.log(data_from_file);
 
-    res.render('portfolio', { data: data_from_file });
+    res.render('portfolio', { title: 'Work', data: data_from_file });
 
   });
+};
+
+exports.about = function(req, res){
+  res.render('about', { title: 'About' });
+};
+
+exports.contact = function(req, res){
+  res.render('contact', { title: 'Contact' });
 };
