@@ -3,9 +3,10 @@
  */
 
 exports.index = function(req, res){
-  console.log(req.params.payload);
+  var payload = JSON.parse(req.body.payload);
+  console.log(payload);
   //var params = JSON.parse(req.query.payload);
-  if (params.ref == "refs/heads/master") {
+  if (false) {
     d = new Date();
     console.log("pushed from master at:" + d );
 
