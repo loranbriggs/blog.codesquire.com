@@ -46,6 +46,14 @@ app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/users', user.list);
 
+var gith = require('gith').create(9001);
+
+gith({
+  repo: 'loranbriggs/codesquire.com'
+}).on( 'all', function(payload) {
+  console.log( 'Push happened');
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
