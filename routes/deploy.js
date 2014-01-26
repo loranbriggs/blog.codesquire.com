@@ -4,7 +4,7 @@
 
 exports.index = function(req, res){
   //var payload = req.body.payload;
-  console.log(req.params);
+  console.log(req.param('payload'));
   //var params = JSON.parse(req.query.payload);
   /*
   if (false) {
