@@ -46,10 +46,9 @@ app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/users', user.list);
 
+var deploy = require('./routes/deploy')
+app.post('/deploy', deploy.index);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
-
-var deploy = require('./routes/deploy')
-app.post('/deploy', deploy.index);
