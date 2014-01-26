@@ -3,7 +3,7 @@
  */
 
 exports.index = function(req, res){
-  console.log(req.query.payload);
+  console.log(req.params.payload);
   //var params = JSON.parse(req.query.payload);
   if (params.ref == "refs/heads/master") {
     d = new Date();
