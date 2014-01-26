@@ -46,6 +46,7 @@ app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/users', user.list);
 
+var deploy = require('./routes/deploy')
 app.post('/deploy', deploy.index);
 
 http.createServer(app).listen(app.get('port'), function(){
