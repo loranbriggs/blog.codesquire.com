@@ -3,7 +3,7 @@
  */
 
 exports.index = function(req, res){
-  var payload = req.body;
+  var payload = req.payload;
   console.log(payload);
   //var params = JSON.parse(req.query.payload);
   /*
