@@ -49,9 +49,17 @@ app.get('/users', user.list);
 var gith = require('gith').create(9001);
 
 gith({
-  repo: 'loranbriggs/codesquire.com'
+  repo: 'loranbriggs/codesquire.com',
+  branch: 'master'
 }).on( 'all', function(payload) {
-  console.log( 'Push happened');
+  console.log( 'Push master');
+});
+
+gith({
+  repo: 'loranbriggs/codesquire.com',
+  branch: 'develop'
+}).on( 'all', function(payload) {
+  console.log( 'Push develop');
 });
 
 http.createServer(app).listen(app.get('port'), function(){
