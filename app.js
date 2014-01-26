@@ -52,7 +52,19 @@ gith({
   repo: 'loranbriggs/codesquire.com',
   branch: 'master'
 }).on( 'all', function(payload) {
-  console.log( 'Push master');
+  var util = require('util'),
+      exec = require('child_process').exec,
+      child,
+      now = new Date();
+
+  child = exec('echo now >> ~/master-pushed.txt', // command line argument directly in string
+    function (error, stdout, stderr) {      // one easy function to capture data/errors
+      console.log('stdout: ' + stdout);
+      console.log('stderr: ' + stderr);
+      if (error !== null) {
+        console.log('exec error: ' + error);
+      }
+  });
 });
 
 gith({
