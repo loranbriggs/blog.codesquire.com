@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  if (req.body.ref == "refs/heads/master") {
+  if (req.body.payload.ref == "refs/heads/master") {
     d = new Date();
     console.log("pushed from master at:" + d );
 
