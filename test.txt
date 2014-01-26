@@ -5,3 +5,4 @@ another hook test
 another hook test
 another hook test
 another hook test
+another hook test
