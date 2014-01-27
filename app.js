@@ -54,8 +54,7 @@ gith({
 }).on( 'all', function(payload) {
   var util = require('util'),
       exec = require('child_process').exec,
-      child,
-      now = new Date();
+      child;
 
   child = exec('. ~/codesquire.com/deploy-master.sh', // command line argument directly in string
     function (error, stdout, stderr) {      // one easy function to capture data/errors
