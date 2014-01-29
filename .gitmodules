@@ -1,0 +1,6 @@
+[submodule "public/projects/habits."]
+	path = public/projects/habits.
+	url = https://github.com/loranbriggs/habits.git
+[submodule "public/projects/habits"]
+	path = public/projects/habits
+	url = https://github.com/loranbriggs/habits.git
