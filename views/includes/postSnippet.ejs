@@ -1,21 +1,18 @@
-<div class="post">
+<div class="postSnippet">
 
-  <h1><a href="<%= post.url %>"><%= post.title %></a></h1>
+  <h3><a href="<%= post.url %>"><%= post.title %></a></h3>
 
-  <span class="date">
-    <%= (post.date.getMonth() + 1) + '.' + post.date.getDate() + '.' + post.date.getFullYear() %>
-  </span>
+  <p class="post-info">
+    <span class="date">
+      <%= (post.date.getMonth() + 1) + '.' + post.date.getDate() + '.' + post.date.getFullYear() %> |
+    </span>
+    <span class="category">
+      <%= post.category %>
+    </span>
+  </p>
 
   <div class="post content">
     <%- post.preview %>
-  </div>
-
-  <div class="tags">
-    <% post.tags.forEach(function(tag){ %>
-      <a href='<%= tagUrl(tag) %>'>
-        <span class="label label-info"><%= tag %></span>
-      </a>
-    <% }) %>
   </div>
 
 </div>

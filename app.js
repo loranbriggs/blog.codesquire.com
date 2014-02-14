@@ -15,6 +15,9 @@ var poet = Poet(app, {
   posts: './_posts/',
   postPerPage: 5,
   metaFormat: 'json',
+  readMoreLink: function(post) {
+    return '<a href="' + post.url + '" class="read-more">Read More...</a>';
+  }
 });
 
 poet.watch(function() {
