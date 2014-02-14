@@ -208,4 +208,8 @@ Now open up two browser windows for example `Chrome` and `Firefox` and talk to
 yourself!
 
 <div class="gplus">
+<!-- Place this tag in your head or just before your close body tag. -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-post" data-href="https://plus.google.com/101579508735882012098/posts/67kW4MhoyFZ"></div>
 </div>
