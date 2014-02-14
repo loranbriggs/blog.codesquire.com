@@ -136,6 +136,16 @@ header nav a {
   margin: 20px 0;
 }
 
+.gplus {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.gplus:before {
+  content: "Please leave your comments below (Embeded G+ Post):";
+  color: #c7254e;
+}
+
 .post-0 {
   background: #118798;
 }

@@ -38,4 +38,8 @@ module.exports  = function(app) {
     res.sendfile('public/projects/habits/index.html');
   });
 
+  app.get('/gplus', function(req, res) {
+    res.render('gplus', { title: 'gPlus' });
+  });
+
 };

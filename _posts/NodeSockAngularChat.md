@@ -9,6 +9,8 @@ Building realtime apps is where Node shines. Data binding is where Angular
 shines. Using Sockjs we will combine the two to make a super simple chat
 aplication.<!--more-->
 
+![Express Sockjs Angular](/post_imgs/NodeSockAngularChat/express-sock-angular.png)
+
 *Prerequisits:*
 
 1. [Node](http://nodejs.org/) and NPM
@@ -204,3 +206,6 @@ running from before make sure you stop it `Ctrl - C` and run it again
 
 Now open up two browser windows for example `Chrome` and `Firefox` and talk to
 yourself!
+
+<div class="gplus">
+</div>
