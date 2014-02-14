@@ -39,11 +39,8 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
-app.get('/work', routes.portfolio);
-app.get('/portfolio', routes.portfolio);
-app.get('/about', routes.about);
-app.get('/contact', routes.contact);
+// routes
+require('./routes/index')(app);
 app.get('/users', user.list);
 
 var gith = require('gith').create(9001);

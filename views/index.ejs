@@ -4,8 +4,12 @@
 <% var page = 1 %>
 
   <div class="posts">
+    <% var i = 0 %>
     <% posts.forEach(function(post){ %>
       <% include includes/postSnippet.ejs %>
+      <% if (++i%2 == 0) { %>
+        <% include includes/advertising.ejs %>
+      <% } %>
     <% }) %>
   </div>
 

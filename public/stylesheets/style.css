@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
 html {
   height: 100%;
   background: #ffffff;
   font-size: 14px;
 }
-body, h1, h2, h3, h4 {
-  font-family: 'Fauna One', Georgia,"Times New Roman",serif;
-}
 body {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, arial, sans-serif;
   font-size: 17px;
   font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fauna One', Georgia,"Times New Roman",serif;
 }
 
 a {
@@ -23,6 +28,22 @@ header, .wrapper {
   max-width: 768px;
   margin: 20px auto 0 auto;
   padding: 0 10px;
+}
+
+.advertising-wrapper {
+  margin: 50px auto;
+}
+
+.advertising {
+  max-width: 320px;
+}
+
+.advertising-left {
+  float: left;
+}
+
+.advertising-right {
+  float: right;
 }
 
 header {
@@ -120,10 +141,13 @@ header nav a {
   color: purple;
 }
 
-@media only screen and (min-width: 1100px) {
-  .advertising {
-    position: absolute;
-    right: 0;
-    top: 150px;
+@media (max-width: 768px) {
+  .advertising-left {
+    float: none;
+    margin: 0 auto;
+  }
+  .advertising-right {
+    display: none;
   }
 }
+
