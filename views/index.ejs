@@ -4,11 +4,11 @@
 <% var page = 1 %>
 
   <div class="posts">
+        <% include includes/advertising-between-posts.ejs %>
     <% var i = 0 %>
     <% posts.forEach(function(post){ %>
       <% include includes/postSnippet.ejs %>
       <% if (++i%2 == 0) { %>
-        <% include includes/advertising-between-posts.ejs %>
       <% } %>
     <% }) %>
   </div>
