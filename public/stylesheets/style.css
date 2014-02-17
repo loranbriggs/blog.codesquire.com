@@ -34,15 +34,13 @@ header {
   padding: 0 10px;
 }
 
-.advertising {
+.advertising-aside .advertising {
   margin: 50px auto;
-  max-width: 320px;
 }
 
-.advertising-left {
-}
-
-.advertising-right {
+.advertising-between-posts .advertising {
+  width: 320px;
+  margin: 0 auto;
 }
 
 header {
