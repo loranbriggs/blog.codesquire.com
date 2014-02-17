@@ -28,26 +28,21 @@ a:hover {
   text-decoration: none;
 }
 
-header, .wrapper {
+header {
   max-width: 768px;
   margin: 20px auto 0 auto;
   padding: 0 10px;
 }
 
-.advertising-wrapper {
-  margin: 50px auto;
-}
-
 .advertising {
+  margin: 50px auto;
   max-width: 320px;
 }
 
 .advertising-left {
-  float: left;
 }
 
 .advertising-right {
-  float: right;
 }
 
 header {
@@ -173,12 +168,8 @@ header nav a {
 }
 
 @media (max-width: 768px) {
-  .advertising-left {
-    float: none;
-    margin: 0 auto;
-  }
-  .advertising-right {
-    display: none;
+  .main-content {
+    padding: 0 20px;
   }
 }
 
