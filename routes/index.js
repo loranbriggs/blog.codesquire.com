@@ -4,7 +4,7 @@ module.exports  = function(app) {
   * GET home page.
   */
   app.get('/', function(req, res){
-    res.render('index', { title: 'Home' });
+    res.render('index', { title: 'Home', mobile: isMobile(req) });
   });
 
   app.get('/portfolio', function(req, res) {
@@ -41,5 +41,12 @@ module.exports  = function(app) {
   app.get('/gplus', function(req, res) {
     res.render('gplus', { title: 'gPlus' });
   });
+
+  var re = new RegExp('android|iphone|ipod|ipad', 'i');
+
+  function isMobile(req) {
+    var ua = req.headers['user-agent'];
+    return re.exec(ua) ? true : false;
+  }
 
 };
