@@ -11,7 +11,7 @@ aplication.<!--more-->
 
 ![Express Sockjs Angular](/post_imgs/NodeSockAngularChat/express-sock-angular.png)
 
-*Prerequisits:*
+*Prerequisites:*
 
 1. [Node](http://nodejs.org/) and NPM
 

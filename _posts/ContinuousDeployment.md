@@ -8,37 +8,37 @@
 Continuous Deployment is the practice of ensuring the most recent changes to
 your code are readily deployable.<!--more-->
 
-*Pre-requistests:*
+*Prerequisites:*
 
 1. [Github](https://github.com/) account, (Githooks, can be used on other services)
-1. VPS, I recomend [Digital Ocean](https://www.digitalocean.com/?refcode=bc8baa3f9b81) (Affiliate Link)
+1. VPS, I recommend [Digital Ocean](https://www.digitalocean.com/?refcode=bc8baa3f9b81) (Affiliate Link)
 1. (Optional) [Node js](http://nodejs.org/), you can use any server side language,
-but I will be higlighty Node js.
+but I will be highlight Node js.
 
 ### But Why?
 If you are part of an agile team working on a project, you most likely are not pushing
-your code live everyday. You are probaly pushing to a production server once
-every two weeks or so depending on your build cycle. You definately would not
+your code live everyday. You are probably pushing to a production server once
+every two weeks or so depending on your build cycle. You definitely would not
 want to be working on something for two weeks to realize that something done
 early in the build cycle, broke something else. Now instead of pushing live, you
 are tracing back over weeks of work to determine the culprit. The key to preventing
-this is Continous Integration, combine everyone's work often (ideally daily)
-using some form of version control. I will be focusing on Continous Deployment
-to a VPS as a way to verify your Continous Integraton was sucessful.
+this is Continuous Integration, combine everyone's work often (ideally daily)
+using some form of version control. I will be focusing on Continuous Deployment
+to a VPS as a way to verify your Continuous Integration was successful.
 
 ### The VPS
-If you are talking about Continous Deployment, you need a place to deploy too.
+If you are talking about Continuous Deployment, you need a place to deploy too.
 Often this is to a [VPS](https://www.digitalocean.com/?refcode=bc8baa3f9b81). I
-strongly recomend [Digital Ocean](https://www.digitalocean.com/?refcode=bc8baa3f9b81)
+strongly recommend [Digital Ocean](https://www.digitalocean.com/?refcode=bc8baa3f9b81)
 because of the price ($5/month), and the fast SSD. Even if you are not a Digital
 Ocean customer, check out their [Community](https://www.digitalocean.com/community)
 it's full of many helpful articles. And if you do decide to join, please use
 my [link](https://www.digitalocean.com/?refcode=bc8baa3f9b81), it
 helps supports this site.
 
-Ideally a project will be built locally, tested on a staging server, and finnaly
-deployed to a production server when ready for launch. Both the stagging and the
-production enviroments can be done on the same server using a sub-domain. Link
+Ideally a project will be built locally, tested on a staging server, and finally
+deployed to a production server when ready for launch. Both the staging and the
+production environments can be done on the same server using a sub-domain. Link
 the staging site to your version control "develop" branch and the production site
 to your "master" branch. A nice tool to keep them organize is
 [Git Flow](https://github.com/nvie/gitflow).
@@ -60,12 +60,12 @@ look like this.
     .
     ssh name@server.....
     git pull
-    <restart scripts if nessary>
+    <restart scripts if necessary>
     deployed!!
 
-This is much nicer than manually transfering files and directories, but it leaves
-room for optimization. Espcially if there are any extra steps after you pull on
-your server. Let's start this automatation proecess using Githooks.
+This is much nicer than manually transferring files and directories, but it leaves
+room for optimization. Especially if there are any extra steps after you pull on
+your server. Let's start this automation process using Githooks.
 
 ### Github and Webhooks
 
@@ -75,7 +75,7 @@ then click on `Add webhook`. Then enter in the url you wish to send the command
 to. In the example below I am using `sandbox.codesquire.com:9004`.
 
 Basically whenever the repository is pushed it will send a json object via a POST 
-request to the url of your choice. Upon recieving that post you can have your 
+request to the url of your choice. Upon receiving that post you can have your 
 web server respond to your liking. If PHP is your thing, this simple Gist can
 get you up running: <https://gist.github.com/cowboy/619858>
 
@@ -127,7 +127,7 @@ Assuming we are starting with a Vanilla [Express](http://expressjs.com/) project
 
 All we need to do is add a few lines at the end like so:
 
-    var gith = require('gith').create(9004); // ensure to match the port you entered in github
+    var gith = require('gith').create(9004); // ensure to match the port you entered in Github
 
     gith({
       repo: 'loranbriggs/Sandbox'
@@ -135,9 +135,9 @@ All we need to do is add a few lines at the end like so:
       console.log( 'Post-receive happened!' );
     });
 
-This will print to the Node console that the push was recived. To make this more
+This will print to the Node console that the push was received. To make this more
 useful we will expand upon this. Remember before I said it would be ideally to
-sepearte your stagging from your production. Well lets start by adding a line
+separate your staging from your production. Well lets start by adding a line
 so this only gets fired when our `develop` branch is pushed:
 
     gith({
