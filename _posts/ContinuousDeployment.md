@@ -8,7 +8,7 @@
 Continuous Deployment is the practice of ensuring the most recent changes to
 your code are readily deployable.<!--more-->
 
-![Continuous Deployment With Github](/post_imgs/GithubNode.png)
+![Continuous Deployment With Github](/post_imgs/ContinuousDeployment/GithubNode.png)
 
 *Prerequisites:*
 
@@ -75,6 +75,8 @@ Github has a great feature, webhooks. Go to the repository in question and click
 on `Settings` on the right side bar. Then click on `Web Hooks & Services` and
 then click on `Add webhook`. Then enter in the url you wish to send the command
 to. In the example below I am using `sandbox.codesquire.com:9004`.
+
+[![Continuous Deployment With Github](/post_imgs/ContinuousDeployment/github-webhooks.jpg)](/post_imgs/ContinuousDeployment/github-webhooks.jpg)
 
 Basically whenever the repository is pushed it will send a json object via a POST 
 request to the url of your choice. Upon receiving that post you can have your 
