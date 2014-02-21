@@ -51,7 +51,7 @@ Typically when you are starting out you build locally and use a FTP program
 such as [FileZilla](https://filezilla-project.org/) to transfer your files to
 the server. Eventually you graduate from that and start using some sort of
 [Version Control](http://en.wikipedia.org/wiki/Revision_control), my personal
-favorite is [Git](http://git-scm.com/) via Github. The typically work flow might
+favorite is [Git](http://git-scm.com/) via Github. The typical work flow might
 look like this.
 
     <work locally>
