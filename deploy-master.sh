@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "Deploying master branch at $(date)" >> ~/.forever/Ov-w.log
+echo "Deploying master branch at $(date)" >> ~/.forever/OoEI.log
 
 git pull
 
-forever restart Ov-w
+forever restart OoEI
