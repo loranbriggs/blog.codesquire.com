@@ -8,6 +8,8 @@
 Continuous Deployment is the practice of ensuring the most recent changes to
 your code are readily deployable.<!--more-->
 
+![Continuous Deployment With Github](/post_imgs/GithubNode.png)
+
 *Prerequisites:*
 
 1. [Github](https://github.com/) account, (Githooks, can be used on other services)
