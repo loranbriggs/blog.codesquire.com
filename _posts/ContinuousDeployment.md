@@ -2,7 +2,7 @@
   "title": "Continuous Deployment With Github",
   "tags": ["Node", "Github", "Deployment"],
   "category": "Tutorial",
-  "date": "2-20-2014"
+  "date": "2-21-2014"
 }}}
 
 Continuous Deployment is the practice of ensuring the most recent changes to

@@ -2,7 +2,7 @@
   "title": "Chat Application with Express, SockJs and Angular",
   "tags": ["Node", "Express", "Javascript", "Websockets", "Angular"],
   "category": "Tutorial",
-  "date": "2-6-2014"
+  "date": "2-14-2014"
 }}}
 
 Building realtime apps is where Node shines. Data binding is where Angular
