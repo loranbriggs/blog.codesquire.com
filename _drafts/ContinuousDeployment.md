@@ -236,4 +236,4 @@ Now place this at the end of your app.js file like so:
 Now for the last time (hopefully) do a `git push`, ssh into the server and do a
 manually `git pull`. Go back and make a change locally, and push again. With
 any luck you should see the live changes without having to manually pull on the
-server anymore!
+server anymore!!
