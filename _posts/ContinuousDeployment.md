@@ -243,4 +243,9 @@ any luck you should see the live changes without having to manually pull on the
 server anymore!!
 
 <div class="gplus">
+<!-- Place this tag in your head or just before your close body tag. -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-post" data-href="https://plus.google.com/101579508735882012098/posts/aweETVUWufA"></div>
 </div>
