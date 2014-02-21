@@ -11,11 +11,11 @@ your code are readily deployable.<!--more-->
 *Pre-requistests:*
 
 1. [Github](https://github.com/) account, (Githooks, can be used on other services)
-1. VPS, I recomend (Digital Ocean)[https://www.digitalocean.com/?refcode=bc8baa3f9b81] (Affiliate Link)
+1. VPS, I recomend [Digital Ocean](https://www.digitalocean.com/?refcode=bc8baa3f9b81) (Affiliate Link)
 1. (Optional) [Node js](http://nodejs.org/), you can use any server side language,
 but I will be higlighty Node js.
 
-## But Why?
+### But Why?
 If you are part of an agile team working on a project, you most likely are not pushing
 your code live everyday. You are probaly pushing to a production server once
 every two weeks or so depending on your build cycle. You definately would not
@@ -26,13 +26,15 @@ this is Continous Integration, combine everyone's work often (ideally daily)
 using some form of version control. I will be focusing on Continous Deployment
 to a VPS as a way to verify your Continous Integraton was sucessful.
 
-## The VPS
+### The VPS
 If you are talking about Continous Deployment, you need a place to deploy too.
 Often this is to a [VPS](https://www.digitalocean.com/?refcode=bc8baa3f9b81). I
 strongly recomend [Digital Ocean](https://www.digitalocean.com/?refcode=bc8baa3f9b81)
 because of the price ($5/month), and the fast SSD. Even if you are not a Digital
 Ocean customer, check out their [Community](https://www.digitalocean.com/community)
-it's full of many helpful articles.
+it's full of many helpful articles. And if you do decide to join, please use
+my [link](https://www.digitalocean.com/?refcode=bc8baa3f9b81), it
+helps supports this site.
 
 Ideally a project will be built locally, tested on a staging server, and finnaly
 deployed to a production server when ready for launch. Both the stagging and the
@@ -41,7 +43,7 @@ the staging site to your version control "develop" branch and the production sit
 to your "master" branch. A nice tool to keep them organize is
 [Git Flow](https://github.com/nvie/gitflow).
 
-## The VPS and Github
+### The VPS and Github
 
 Typically when you are starting out you build locally and use a FTP program
 such as [FileZilla](https://filezilla-project.org/) to transfer your files to
@@ -62,10 +64,10 @@ look like this.
     deployed!!
 
 This is much nicer than manually transfering files and directories, but it leaves
-room for optimization. Espcially if there is any extra steps after you pull on
+room for optimization. Espcially if there are any extra steps after you pull on
 your server. Let's start this automatation proecess using Githooks.
 
-## Github and Webhooks
+### Github and Webhooks
 
 Github has a great feature, webhooks. Go to the repository in question and click
 on `Settings` on the right side bar. Then click on `Web Hooks & Services` and
@@ -84,7 +86,7 @@ To start, run the following from your node project folder:
 
     npm install gith --save
 
-Assuming we are starting with a Vanilla (Express)[http://expressjs.com/]:
+Assuming we are starting with a Vanilla [Express](http://expressjs.com/) project:
 
 
     /**
@@ -237,3 +239,6 @@ Now for the last time (hopefully) do a `git push`, ssh into the server and do a
 manually `git pull`. Go back and make a change locally, and push again. With
 any luck you should see the live changes without having to manually pull on the
 server anymore!!
+
+<div class="gplus">
+</div>

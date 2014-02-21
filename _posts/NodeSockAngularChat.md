@@ -15,18 +15,18 @@ aplication.<!--more-->
 
 1. [Node](http://nodejs.org/) and NPM
 
-## Quick Start
+### Quick Start
 
     git clone https://github.com/loranbriggs/Simple-Chat.git
     cd Simple-Chat
     npm install
     node app.js
 
-## Build from Scratch
+### Build from Scratch
 
 Okay, that was boring, let's learn how to build this ourselves...
 
-### Creating the project
+#### Creating the project
 We will be using Node, with Express as our server side framework. To use the
 Express generator you have to install Express globally:
 
