@@ -42,6 +42,10 @@ module.exports  = function(app) {
     res.render('gplus', { title: 'gPlus' });
   });
 
+  app.get('/vimeo', function(req, res) {
+    res.render('vimeo', { title: 'Vimeo' });
+  });
+
   var re = new RegExp('android|iphone|ipod|ipad', 'i');
 
   function isMobile(req) {

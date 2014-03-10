@@ -1,0 +1,80 @@
+<% include includes/header.ejs %>
+<style>
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+</style>
+<script>
+  var channel = 'staffpicks';
+  var url = 'http://vimeo.com/api/v2/channel/' + channel + '/videos.json';
+  var embedEndpoint = 'http://www.vimeo.com/api/oembed.json';
+  var embedCallback = 'embedVideo'; //declared below
+  var videoJson;
+
+  function playVideo(thumbId) {
+    console.log(thumbId);
+    /*
+    var largeThumb = document.createElement("img");
+    largeThumb.src = videoJson[thumbId].thumbnail_large;
+    playerDiv.appendChild(largeThumb);
+    */
+
+    var videoUrl = videoJson[thumbId].url;
+    var embedUrl = embedEndpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + embedCallback + '&width=640';
+
+    var embedScript = document.createElement('script');
+    embedScript.setAttribute('type', 'text/javascript');
+    embedScript.setAttribute('src', embedUrl);
+    document.getElementsByTagName('head').item(0).appendChild(embedScript);
+
+  }
+
+  function embedVideo(video) {
+    document.getElementById('player').innerHTML = unescape(video.html);
+  }
+
+  function displayThumbs() {
+    videoJson = JSON.parse(this.response);
+    console.log(videoJson[2]);
+    var videosUL = document.getElementById('videos');
+
+    for (var i = 0; i < videoJson.length; i++) {
+      var li = document.createElement("li");
+      var thumb = document.createElement("img");
+      thumb.src = videoJson[i].thumbnail_small;
+      thumb.setAttribute('data-id', i);
+      var addOnClick = function(currentId) {
+        thumb.onclick = function() {
+          playVideo(currentId);
+        };
+      };
+      addOnClick(i);
+      li.appendChild(thumb);
+      videosUL.appendChild(li);
+    }
+  }
+
+  var myRequest = new XMLHttpRequest();
+  myRequest.onload = displayThumbs;
+  myRequest.open("get", url);
+  myRequest.send();
+</script>
+
+  <div class="vimeo">
+    <h3>Vimeo Staff Picks</h3>
+
+    <ul id="videos">
+    </ul>
+
+    <div id="player">
+      <label>Click a thumbnail to load video</label>
+    </div>
+
+  </div>
+
+<% include includes/footer.ejs %>
