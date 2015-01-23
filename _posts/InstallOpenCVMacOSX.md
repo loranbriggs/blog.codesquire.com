@@ -125,3 +125,10 @@ worked.
 If everything works you should see a simple gui with your image display.
 Now that you have OpenCV working, go build something cool! Go to the OpenCV
 websites to view their [tutorials](http://docs.opencv.org/doc/tutorials/tutorials.html).
+
+<div class="gplus">
+<!-- Place this tag in your head or just before your close body tag. -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-post" data-href="https://plus.google.com/101579508735882012098/posts/NHwxoXJGq84"></div>
